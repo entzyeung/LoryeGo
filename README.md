@@ -105,7 +105,7 @@ The game has been packaged into a standalone Windows executable (`.exe`) using P
 ### Issues
 This is my side project for fun only, and still under development. This version is just a MVP for demo purpose only. 
 
-- Report bugs or suggest features by opening an [issue](https://github.com/<your-username>/LoryeGo/issues).
+- Report bugs or suggest features by opening an [issue](https://github.com/entzyeung/LoryeGo/issues).
 
 ---
 
