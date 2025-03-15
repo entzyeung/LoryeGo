@@ -1,10 +1,14 @@
 # Lorye Go! 香港版
 
-歡迎嚟到 **Lorye Go! 香港版**，一個好玩又刺激嘅火車主題棋盤遊戲，場景設定喺充滿活力嘅香港！玩家可以喺MTR（港鐵）網絡上移動，買樓收租，同朋友一齊競爭，到達指定地點賺取獎勵。呢個項目將經典棋盤遊戲體驗同香港特色融合，透過Pygame技術實現。
+歡迎嚟到 **Lorye Go! 香港版**，一個好玩又刺激嘅火車主題棋盤遊戲，場景設定喺充滿活力嘅香港！玩家可以喺MTR（港鐵）網絡上移動，買樓，同朋友一齊競爭，到達指定地點賺取獎勵。呢個項目將經典棋盤遊戲體驗同香港特色融合，透過Pygame技術實現。 
+
+靈感來自經典棋盤遊戲，例如Momotaro Densetsu。
+
+呢個係我為趣而做嘅副業項目，仍然喺開發中。呢個版本只係一個MVP（最小可行產品），用來示範用途。
 
 - **網站**: [LoryeGo 主頁](https://entzyeung.github.io/LoryeGo)
 - **GitHub 倉庫**: [https://github.com/entzyeung/LoryeGo](https://github.com/entzyeung/LoryeGo)
-- **開發者**: 楊彥智 (Entz Yeung)
+- **開發者**: Entz Yeung
 - **許可證**: [MIT 許可證](#license)
 
 ---
