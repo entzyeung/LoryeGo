@@ -120,6 +120,6 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use, pla
 
 ## Contact
 - **GitHub**: [https://github.com/entzyeung](https://github.com/entzyeung)
-- **Email**: [entzyeung@gmail.com] (replace with your email)
+- **Email**: [entzyeung@gmail.com]
 
 ---
