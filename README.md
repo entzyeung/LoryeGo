@@ -2,8 +2,8 @@
 
 Welcome to **Lorye Go! 香港版**, a fun and engaging train-themed board game set in the vibrant city of Hong Kong! Navigate the MTR (Mass Transit Railway) network, buy properties, compete with friends, and reach destinations to earn rewards. This project combines the classic board game experience with a unique Hong Kong twist, brought to life using Pygame.
 
-- **Website**: [LoryeGo Homepage](https://entzyeung.github.io/LoryeGo) (replace with your actual GitHub Pages URL)
-- **GitHub Repository**: [https://github.com/entzyeung/LoryeGo](https://github.com/entzyeung/LoryeGo) (replace with your repo URL)
+- **Website**: [LoryeGo Homepage](https://entzyeung.github.io/LoryeGo)
+- **GitHub Repository**: [https://github.com/entzyeung/LoryeGo](https://github.com/entzyeung/LoryeGo)
 - **Developed by**: Entz Yeung
 - **License**: [MIT License](#license)
 
