@@ -1,71 +1,66 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorye Go! 香港版</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            color: #333;
-        }
-        .game-info {
-            max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .game-info img {
-            width: 100%; /* Makes the image span the full width of its container */
-            max-width: 100%; /* Ensures the image doesn't exceed the container's max-width */
-            height: auto; /* Maintains aspect ratio */
-            display: block; /* Removes any inline spacing issues */
-            margin: 10px auto; /* Centers the image and adds vertical spacing */
-        }
-        .download-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .download-btn:hover {
-            background-color: #0056b3;
-        }
-        @media (max-width: 600px) {
-            .game-info {
-                max-width: 100%;
-                padding: 10px;
-            }
-        }
-    </style>
+    <title>Lorye Go! 香港版 - A Train-Themed Board Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Lorye Go! 香港版</h1>
-    <div class="game-info">
-        <p>Welcome to Lorye Go! 香港版, a fun train-themed board game set in Hong Kong! Navigate the MTR network, buy properties, and compete with friends.</p>
-        <p><strong>Download the Game:</strong></p>
-        <img src="win/screenshots/Lorye_G0_Hong_Kong.png" alt="Game Cover">
-        <a href="https://github.com/entzyeung/LoryeGo/blob/main/win/Lorye_Go_v092.exe" class="download-btn">Download .exe</a>
-        <a href="https://github.com/entzyeung/LoryeGo/blob/main/README.cht.md" class="download-btn">中文介紹</a>
-        <img src="win/screenshots/window_screenshot_20250315_071518.jpg" alt="Game Screenshot">
-        <p><strong>How to Play:</strong></p>
-        <ul>
-            <li>Roll the dice to move across the map.</li>
-            <li>Purchase properties at city stations.</li>
-            <li>Reach destinations to earn rewards!</li>
-        </ul>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <img src="pics/logo.png" alt="Lorye Go! 香港版 Logo" class="logo">
+            <h1>Lorye Go! 香港版</h1>
+            <p>A Fun Train-Themed Board Game Set in Hong Kong</p>
+            <a href="https://github.com/entzyeung/LoryeGo/raw/main/win/Lorye_Go_v092.exe" class="cta-button">Download Now</a>
+        </div>
+    </header>
 
-        <p>Developed by: EntzYeung | <a href="https://github.com/entzyeung">GitHub Profile</a></p>
-    </div>
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About the Game</h2>
+            <p>Lorye Go! 香港版 is a digital board game where players navigate Hong Kong's MTR network, buy properties, and compete to reach destinations. With seasonal events, multiplayer support for up to 4 players, and custom graphics, it’s a unique blend of strategy and fun!</p>
+        </section>
+
+        <!-- Screenshots Section -->
+        <section id="screenshots">
+            <h2>Screenshots</h2>
+            <div class="screenshot-gallery">
+                <img src="win/screenshots/Lorye_G0_Hong_Kong.png" alt="Game Cover">
+                <img src="win/screenshots/window_screenshot_20250315_071518.jpg" alt="Gameplay Screenshot">
+            </div>
+        </section>
+
+        <!-- How to Play Section -->
+        <section id="how-to-play">
+            <h2>How to Play</h2>
+            <ul>
+                <li><strong>Roll Dice:</strong> Click "擲骰" (Roll Dice) on the HUD to move.</li>
+                <li><strong>Navigate Map:</strong> Use "瀏覽地圖" (Browse Map) to explore or click stations to move.</li>
+                <li><strong>Buy Properties:</strong> Visit city stations to purchase assets.</li>
+                <li><strong>Reach Destinations:</strong> Arrive at the destination to earn HK$500.</li>
+                <li><strong>Events:</strong> Encounter seasonal or station-specific events that may teleport you or affect your cash.</li>
+            </ul>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download">
+            <h2>Get the Game</h2>
+            <p>Download the latest version of Lorye Go! 香港版 for Windows and start playing today!</p>
+            <a href="https://github.com/entzyeung/LoryeGo/raw/main/win/Lorye_Go_v092.exe" class="cta-button">Download .exe</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Developed by Entz Yeung | <a href="https://github.com/entzyeung">GitHub Profile</a> | <a href="mailto:entzyeung@gmail.com">Contact</a></p>
+        <p>&copy; 2025 Lorye Go! 香港版. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
