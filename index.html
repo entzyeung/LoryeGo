@@ -13,7 +13,8 @@
         <div class="header-content">
             <div class="main-visual">
                 <img src="pics/logo.eng.png" alt="Lorye Go! Hong Kong Edition Logo" class="logo">
-                <p>A Fun Train-Themed Board Game Set in Hong Kong</p>
+                <H1>Lorye Go！Hong Kong Edition</H1>
+                <p>A Fun Train-Themed Board Game</p>
             </div>
             <div class="download-section">
                 <div class="download-buttons">
@@ -41,19 +42,125 @@
                 <a href="https://github.com/entzyeung/LoryeGo/blob/main/README.cht.md" class="readme-btn chinese">中文 README</a>
             </div>
             <p>Lorye Go! Hong Kong Edition is a digital board game where players navigate Hong Kong's MTR network, buy properties, and compete to reach destinations. With seasonal events, multiplayer support for up to 4 players, and custom graphics, it’s a unique blend of strategy and fun!</p>
-
-
             <div class="video-container">
                 <iframe width="770" height="433" src="https://www.youtube.com/embed/el2SWws_yZc?autoplay=1&start=403&mute=1&loop=1&playlist=el2SWws_yZc" title="Lorye Go! Hong Kong Edition Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- News Section (Card Carousel) -->
+        <section id="news" class="content-section">
+            <h2>News</h2>
+            <div class="news-carousel-container">
+                <button class="carousel-btn left" onclick="scrollCarousel('left')">❮</button>
+                <div class="news-carousel" id="newsCarousel">
+                    <!-- New Article -->
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="pics/news/news-hype-coding.jpg" alt="Hype Coding Lorye Go!">
+                        </div>
+                        <div class="news-content">
+                            <h3>Hype Coding a Hong Kong Dream</h3>
+                            <p class="news-date">3/26/2025</p>
+                            <p>A word from the game developer — a journey with AI and enthusiasm from dream to reality.</p>
+                            <a href="news_hype_coding.html" class="news-btn">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="pics/news-collab1.png" alt="A Placeholder">
+                        </div>
+                        <div class="news-content">
+                            <h3>A Placeholder</h3>
+                            <p class="news-date">3/25/2025</p>
+                            <p>A Placeholder</p>
+                            <a href="#" class="news-btn">CHECK</a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="pics/news-bugfix.png" alt="A Placeholder">
+                        </div>
+                        <div class="news-content">
+                            <h3>A Placeholder</h3>
+                            <p class="news-date">3/15/2025</p>
+                            <p>A Placeholder</p>
+                            <a href="#" class="news-btn">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="pics/news-collab2.jpg" alt="A Placeholder">
+                        </div>
+                        <div class="news-content">
+                            <h3>A Placeholder</h3>
+                            <p class="news-date">4/1/2025</p>
+                            <p>A Placeholder</p>
+                            <a href="#" class="news-btn">CHECK</a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="pics/news-update.jpg" alt="A Placeholder">
+                        </div>
+                        <div class="news-content">
+                            <h3>A Placeholder</h3>
+                            <p class="news-date">4/10/2025</p>
+                            <p>A Placeholder</p>
+                            <a href="#" class="news-btn">VIEW</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn right" onclick="scrollCarousel('right')">❯</button>
+            </div>
+            <div class="carousel-dots" id="newsDots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
             </div>
         </section>
 
         <!-- Screenshots Section -->
         <section id="screenshots" class="content-section">
             <h2>Screenshots</h2>
-            <div class="screenshot-gallery">
-                <img src="win/screenshots/Lorye_G0_Hong_Kong.png" alt="Game Cover">
-                <img src="win/screenshots/window_screenshot_20250315_071518.jpg" alt="Gameplay Screenshot">
+            <div class="screenshot-carousel-container">
+                <button class="carousel-btn left" onclick="scrollScreenshotCarousel('left')">❮</button>
+                <div class="screenshot-carousel" id="screenshotCarousel">
+                    <div class="screenshot-item">
+                        <img src="pics/screenshots/screenshot-1.jpg" alt="Game Cover">
+                        <p>King-Rexy's invasion! Can you survive his stomps?</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="pics/screenshots/screenshot-2.jpg" alt="Gameplay Screenshot">
+                        <p>Who is the alien kidnapping...? You?</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="pics/screenshots/screenshot-3.jpg" alt="Station Purchase">
+                        <p>Lundam shows up in Hong Kong TST! Go get a selfie!</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="pics/screenshots/screenshot-4.jpg" alt="Event Screen">
+                        <p>The legendary Blue Hut Restaurant opens again secretly in Stanley!</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="pics/screenshots/screenshot-5.jpg" alt="Multiplayer Mode">
+                        <p>Multiplayer action with friends! Player 1 is blue, player 2 is yellow, ... player 4 is green!</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="pics/screenshots/screenshot-6.jpg" alt="Victory Screen">
+                        <p>Other seasonal events! Are you going to benefit or worsen off?</p>
+                    </div>
+                </div>
+                <button class="carousel-btn right" onclick="scrollScreenshotCarousel('right')">❯</button>
+            </div>
+            <div class="carousel-dots" id="screenshotDots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
             </div>
         </section>
 
@@ -64,8 +171,8 @@
                 <li><strong>Roll Dice:</strong> Click "擲骰" (Roll Dice) on the HUD to move.</li>
                 <li><strong>Navigate Map:</strong> Use "瀏覽地圖" (Browse Map) to explore or click stations to move.</li>
                 <li><strong>Buy Properties:</strong> Visit city stations to purchase assets.</li>
-                <li><strong>Reach Destinations:</strong> Arrive at the destination to earn HK$500.</li>
-                <li><strong>Events:</strong> Encounter seasonal or station-specific events that may teleport you or affect your cash.</li>
+                <li><strong>Reach Destinations:</strong> Arrive at the destination to earn HK$1000!</li>
+                <li><strong>Events:</strong> Encounter seasonal or station-specific events that may teleport you or affect your cash!</li>
             </ul>
         </section>
 
@@ -86,10 +193,11 @@
 
     <!-- Footer -->
     <footer class="content-section">
-        <p>Developed by Entz Yeung | <a href="https://github.com/entzyeung">GitHub Profile</a> | <a href="mailto:entzyeung@gmail.com">Contact</a></p>
+        <p>Developed by Entz Yeung | <a href="https://github.com/entzyeung">GitHub Profile</a> | <a href="/cdn-cgi/l/email-protection#391c170d03001c0c171e391e14181015571a1614">Contact</a></p>
         <p>© 2025 Lorye Go! Hong Kong Edition. All rights reserved.</p>
     </footer>
 
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

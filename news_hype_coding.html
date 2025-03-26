@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hype Coding a Hong Kong Dream - Lorye Go! News</title>
+    <link rel="icon" type="image/x-icon" href="pics/game_icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header {
+            background-color: #5f1a04;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #34495e;
+        }
+        header .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header nav {
+            margin-top: 10px;
+        }
+        header nav a {
+            color: #ecf0f1;
+            margin: 0 15px;
+            font-weight: 700;
+        }
+        .content {
+            max-width: 770px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .content .landscape-img {
+            width: 100%;
+            max-width: 770px;
+            height: auto;
+            margin-bottom: 0px;
+            border-radius: 5px;
+        }
+        .content h1 {
+            font-size: 2.5em;
+            color: #515151;
+            margin-bottom: 10px;
+        }
+        .content h2 {
+            font-size: 1.5em;
+            color: #e74c3c;
+            margin-top: 30px;
+        }
+        .content p {
+            margin: 15px 0;
+        }
+
+        .content pre {
+            background: #f8f8f8;
+            padding: 5px;
+            border-left: 4px solid #3498db;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            white-space: pre;
+            line-height: 1.1;
+        }
+
+        .pic_description {
+            margin-top: 0px; /* Adds space between image and text */
+            font-size: 12px; /* Adjust as needed */
+            text-align: center;
+        }
+
+        .video-container {
+            width: 100%; /* Matches .landscape-img */
+            height: 0; /* Use padding-bottom for aspect ratio */
+            padding-bottom: 56.25%; /* 16:9 aspect ratio (433/770 ≈ 56.25%) */
+            position: relative; /* For absolute positioning of iframe */
+            margin-bottom: 0; /* Matches .landscape-img */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Fills container */
+            height: 100%; /* Fills container */
+        }
+
+        .chart-container {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 300px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .bar {
+            width: 100px;
+            background-color: #3498db;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            position: relative;
+            border-radius: 5px 5px 0 0;
+        }
+        .bar-label {
+            position: absolute;
+            bottom: -25px;
+            width: 100%;
+            color: #333;
+            font-size: 0.9em;
+        }
+        .bar-value {
+            position: absolute;
+            top: -25px;
+            width: 100%;
+            color: #333;
+            font-size: 0.9em;
+        }
+
+        footer {
+            background-color: #5f1a04;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 4px solid #34495e;
+        }
+        footer a {
+            color: #ecf0f1;
+            margin: 0 10px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html"><img src="pics/logo.eng.png" alt="Lorye Go! Hong Kong Edition Logo" class="logo"></a>
+        <h1>Lorye Go! Hong Kong Edition - News</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#download">Download</a>
+            <a href="https://github.com/entzyeung/LoryeGo">GitHub</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="video-container">
+            <iframe width="770" height="433" src="https://www.youtube.com/embed/z7JfpJKUDOw?autoplay=1&start=403&mute=1&loop=1&playlist=z7JfpJKUDOw" title="Lorye Go! Hong Kong under development in early stage." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="pic_description">Lorye Go! Hong Kong under development in early stage.</p>
+        
+        
+
+        <h1>Hype Coding a Hong Kong Dream: <br>Building Lorye Go! with AI</h1>
+        <p><em>Published on March 26, 2025 by Entz Yeung</em></p>
+
+        <h2>From Imagination to Action: AI as My Wings</h2>
+        <p>I’ve been coding in Python for over 10 years, mostly data science, machine learning engineering and AI engineering. Pygame? I’d heard of it, played with basic rectangles and circles once or twice, but never dared to dream of building a full-fledged game. The threshold was too high. I was not worried about the learning curve, all i worried was the massive amount of hours i have to pour into it.</p>
+        
+        <p>I wanted to create something fun, something that resonated with Hong Kongers - like a legacy for the young generation. But my imagination outpaced my skills. The map layouts, the animations, the game logic, game coding — it all felt like climbing whatever mountain without gears.</p>
+
+        <p>I have been a subscriber of multiple AI services. They are all very helpful if you have already had the domain knowledge of that area, then AI can give you a huge boost in efficiency. However, if you are a total noob in an area, then AI can not be too help. But then came Grok 3 (Heard good story about Gemini 2.5 Pro recently, I would really love to jump into it and try it out). With Grok 3 as my co-pilot, hype coding flipped the script. Suddenly, I wasn’t just fantasizing about <a href="https://entzyeung.github.io/LoryeGo/"><i>Lorye Go! Hong Kong Edition</i></a> — I was building it. In 4 weeks, not years, I had a working prototype: players rolling dice, hopping between MTR stations, buying properties, and dodging seasonal events like typhoons and tram collaborations. Without AI, I’d still be staring at a blank IDE, and feeling overwhelmed. With it, I finished something I never thought I could. As some developer put it (sorry I forgot where and who), “AI turns coders into wizards—point, wish, and watch the magic happen.” That’s exactly how it felt.</p>
+
+        <h2>Half Human, Half Machine: The Collaboration</h2>
+        <p>Grok 3 is brilliant, but it’s not a replacement for human ingenuity. This project was a 50/50 split. I brought the vision, the planning, the testing, the debugging; Grok handled the heavy lifting of general code generation. Think of it as the ultimate coding assistant — an engineer so competent I could just say, “Hey, make me a carousel HUD with 3D buttons,” and 70% of the time, it delivered exactly what I pictured. The other 30%? Well, AI makes mistakes. It hallucinates syntax, misinterprets intent, or churns out code that looks perfect but crashes spectacularly. That’s where I came in — running the game, spotting glitches (like trains teleporting off the map), and nudging Grok back on track.</p>
+
+        <img src="pics/news/news-hype-coding-1.png" alt="Grok3 helps me to conceptualize the idea in my brain." class="landscape-img">
+        <p class="pic_description">AI not only helps visualize my mind map, but also makes my dream come true. The above is the game board after a day of tidy up manually.</p>
+
+        <p>Another big reason I kicked off this project was to see just how far vibe coding could take me. In the early proof-of-concept (POC) stage, Grok 3 was a revelation—it could almost nail what I wanted in one go. (I’ll share the text-based POC version of *Lorye Go!* later in my repo.) That alone blew me away. But the real test came when I moved to the 2D game board version.</p> 
+        
+        <p>One massive hurdle Grok 3 couldn’t clear was mapping the x and y coordinates of stations onto a 2D map. My first prompt was simple: “Give me rough x and y coordinates for the stations on a simplified map with plenty of resolution.” It flopped. So, I iterated—feeding Grok more details each time: station names, rough positions, their relationships, even narrowing it down to a small chunk of the map. Still, Grok 3 couldn’t deliver a decent list of station locations that made sense.</p> 
+        
+        <p>In the end, I charted it manually — a task that took days to complete. But when I stepped back, my map looked messy. So, I turned to Grok again: “Can you tidy this up? Align the stations neatly if they’re roughly in a straight line.” Even after refining the prompt multiple times, Grok failed to get it right. The stations stayed stubbornly out of whack.</p>
+
+        <p>Can AI replace humans? It could, but not in a year or two, no way. It’s a tool, not a brain. I’d pitch an idea — say, a question-and-answer system for trivia stations — and Grok would whip up a decent draft. But when a player’s cash went negative and the game didn’t handle debt properly, I had to step in, test it in real-time, and tweak the logic. AI doesn’t “feel” the game flow; it doesn’t catch the subtle bugs that only a human playing it can spot. Mr. Hossein Mohammadi echos this: <a href="https://www.linkedin.com/posts/hosseinmohammadi_ai-is-like-hiring-a-genius-intern-who-never-activity-7268171909744230401-S_zO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAATaUCcBH4GmWnY1CDEzuJLtSxq5kV45nmA">his Linkedin post</a> called AI “a genius intern who never sleeps, works lightning-fast, and occasionally gets things hilariously wrong”</p>
+
+        <h2>The Art of Balance: Where AI Stumbles</h2>
+
+        <p>Speaking of game flow, balancing is another area where AI struggles — and it’s not its fault. Balance is subjective, tied to human emotions and feelings. Should reaching a destination net you $500 or $1000? How often should seasonal events trigger — 10% or 20%? I asked Grok to tune these, but its suggestions were either too mechanical (flat percentages) or wildly off (a $10,000 prize that broke the economy). Even among humans, balance is debated endlessly — check any gaming forum, and you’ll see players arguing over what “feels right.” For <i>Lorye Go!</i>, I ended up tweaking events, probabilities and rewards myself, playing round after round to get that sweet spot where it’s challenging yet fun. AI can’t taste that magic yet.</p>
+
+        <h2>The Index-Heavy Headache: A Human Touch</h2>
+        <p>Then there’s the “index-heavy stuff” — tasks involving complex, structured data even though patterns are obvious. Take the <code>map_layout</code> from <i>stations.py</i> as an example. Each station is a dictionary with keys like <code>"name"</code>, <code>"x"</code>, <code>"y"</code>, <code>"connections"</code>, and <code>"assets"</code>. Here’s a snippet:</p>
+        <pre>
+            map_layout = {
+                0: {"name": "Hong Kong", "line": "TCL", "connections": [25, 108], "x": 3516, "y": 3063, "type": "city", "assets": [...]},
+                1: {"name": "Kowloon",   "line": "TCL", "connections": [2, 104, 106], "x": 2752, "y": 3063, "type": "city", "assets": [...]},
+                2: {"name": "Olympic",   "line": "TCL", "connections": [1, 3], "x": 2952, "y": 3063, "type": "city", "assets": [...]},
+                ...
+            }
+        </pre>
+
+        
+        <p>I wanted stations aligned logically — say, spacing “Hong Kong”, "Kowloon” and “Olympics” evenly on a horizontal line. I told Grok, “These three are on the Tung Chung Line; space their x-coordinates evenly between 2752 and 3516, keeping y consistent.” Simple, right? Nope. Grok either miscalculated the intervals, ignored the y-alignment, or mixed up station IDs. With over 100 stations, the errors piled up fast—coordinates overlapped, connections broke, and the map looked like a toddler’s scribble.</p>
+
+        <p>Why? LLMs like Grok learn from patterns—text, syntax, logic flows. But this task is too heavily patterns-driven; it’s spatial and relational, with hundreds of overlapping and similar values. When I asked it to validate connections (e.g., ensure “Hong Kong” links to “Central” at index certain index), it’d miss half the checks or can't discern the old and new indices. I ended up doing it all manually — reconnecting and realigning stations, and verifying every link. For a handful of entries, AI might cope, but scale it to 10+ with nested data, and it’s a mess. This isn’t a knock on Grok — it’s just not built for that grind.</p>
+
+        <h2>The Grind in Numbers</h2>
+        <p>I kicked off this project around March 1st, diving in with full-on vibe-coding energy. Day and night, I was at it—logging at least 6 hours daily during the week and cranking it up to 18 hours on weekends. Not a single day off. The journey’s left its mark: 109 development scripts tracked and 950 log files piled up in my records. Even the animations, simple as they seem with just 3 frames each, took serious effort—averaging over 4 hours per set to get them just right.</p>
+
+        <div class="chart-container">
+            <div class="bar" style="height: 60px;">
+                <span class="bar-value">109</span>
+                <span class="bar-label">Scripts</span>
+            </div>
+            <div class="bar" style="height: 285px;">
+                <span class="bar-value">950</span>
+                <span class="bar-label">Log Files</span>
+            </div>
+        </div>
+
+        <h2>Anyway A Love Letter Delivered</h2>
+        <p>Despite the hiccups, <i>Lorye Go!</i> came to life. Players can now roll dice across a vibrant MTR map, buy properties like “FUNERAL HOME” and laugh at events like “King Rexy's invasion” (a nod to Hong Kong’s quirky chaos). It’s not perfect — balance still needs polish, and the map could use more finesse — but it’s mine, and it’s for Hong Kongers. Hype coding with Grok 3 gave me the push to start, the tools to build, and the confidence to finish.</p>
+
+        <p>Online, the hype coding crowd would call this a win: “You shipped it, that’s what counts,” one X post said. And I agree. AI lowered the barrier, but it was my passion — and hours of human grit — that got it over the line. So, to anyone dreaming big but hesitating: grab an AI, ride the hype, and start coding. You might just surprise yourself.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Developed by Entz Yeung</p>
+        <p><a href="https://github.com/entzyeung">GitHub Profile</a> | <a href="mailto:entzyeung@gmail.com">Contact</a></p>
+        <p><a href="index.html">Back to Lorye Go! Homepage</a></p>
+        <p>© 2025 Lorye Go! Hong Kong Edition. All rights reserved.</p>
+    </footer>
+</body>
+</html>
