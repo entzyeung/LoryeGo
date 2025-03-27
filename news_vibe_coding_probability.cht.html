@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Coding 之旅 - 小熊諾樂GO！香港版新聞</title>
+    <link rel="icon" type="image/x-icon" href="pics/game_icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header {
+            background-color: #5f1a04;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #34495e;
+        }
+        header .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header nav {
+            margin-top: 10px;
+        }
+        header nav a {
+            color: #ecf0f1;
+            margin: 0 15px;
+            font-weight: 700;
+        }
+        .content {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .content .landscape-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 0px;
+            border-radius: 5px;
+        }
+        .content h1 {
+            font-size: 2.5em;
+            color: #515151;
+            margin-bottom: 10px;
+        }
+        .content h2 {
+            font-size: 1.5em;
+            color: #e74c3c;
+            margin-top: 30px;
+        }
+        .content p {
+            margin: 15px 0;
+        }
+        .content a {
+            word-wrap: break-word;
+        }
+        .content pre {
+            background: #f8f8f8;
+            padding: 5px;
+            border-left: 4px solid #3498db;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            white-space: pre-wrap;
+            line-height: 1.1;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        .pic_description {
+            margin-top: 0px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .video-container {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            position: relative;
+            margin-bottom: 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+        footer {
+            background-color: #5f1a04;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 4px solid #34495e;
+        }
+        footer a {
+            color: #ecf0f1;
+            margin: 0 10px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        .consent-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            max-width: 400px;
+            margin: auto;
+        }
+        .consent-popup p {
+            margin: 0 0 15px;
+            font-size: 14px;
+        }
+        .consent-popup button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .consent-popup button:hover {
+            background: #2980b9;
+        }
+        .consent-popup .decline {
+            background: #e74c3c;
+        }
+        .consent-popup .decline:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="consent-popup" id="consentPopup" style="display: none;">
+        <p>我們使用 cookies 和 analytics 來提升您的體驗。繼續使用即表示您同意我們的 <a href="privacy.html">隱私政策</a>。</p>
+        <button onclick="acceptTracking()">接受</button>
+        <button class="decline" onclick="declineTracking()">拒絕</button>
+    </div>
+    <noscript id="gtm-noscript"></noscript>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html"><img src="pics/logo.eng.png" alt="小熊諾樂GO！香港版 Logo" class="logo"></a>
+        <h1>小熊諾樂GO！香港版 - 新聞</h1>
+        <nav>
+            <a href="index.html">首頁</a>
+            <a href="index.html#about">關於</a>
+            <a href="index.html#download">下載</a>
+            <a href="https://github.com/entzyeung/LoryeGo">GitHub</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/el2SWws_yZc?autoplay=1&start=403&mute=1&loop=1&playlist=el2SWws_yZc" title="小熊諾樂GO！香港版 Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="pic_description">小熊諾樂GO！香港版遊戲展示隨機化的實際效果。</p>
+
+        <h1>Vibe Coding 之旅：<br>解決《小熊諾樂GO！香港版》的隨機化問題</h1>
+        <p><em>由EntzYeung於2025年3月27日發布</em></p>
+
+        <h2>新挑戰：可預測的隨機性</h2>
+        <p>作為《<i>小熊諾樂GO！香港版</i>》的開發者，我已經和 AI 合作了大約三週，將這個以火車為主題的棋盤遊戲帶入生活。但是我發現了一個新問題：遊戲內的問題和事件的隨機化不如預期那樣隨機。遊戲有 440 條 trivia 問題，黃色車站，和與季節性有關的隨機事件等，這些全都需要依靠隨機去選擇出來，因為我希望每場遊戲都能讓玩家感覺到新鮮感。更重要的是，透過隨機問題，希望年輕的玩家能從遊戲認識到香港的特色。然而，現在玩家卻不斷只看到相同的問題 — 如 QIDs 1、100、233、301 — 出現得太頻繁。事件的隨機性也感覺不對，雖然因為選項較少而較不明顯。因此我寫下了這篇日誌，記錄了我如何與 AI 一起解決這個問題。</p>
+
+        <h2>罪魁禍首：PRNG 和可預測模式</h2>
+        <p>問題源自 Python 的 <code>random</code> 模組，這是一個本質上確定性的偽隨機數生成器 (PRNG)。如果沒有多樣化的種子，它會生成相似的序列。在我的遊戲中，我首先在啟動時和每個遊戲會話開始時各洗牌問題列表一次，但選擇仍使用 <code>question_count % len(all_questions)</code>。如果每個遊戲開始時 question_count 重置為 0，我就總是從洗牌後列表的開頭挑選。如果由於 PRNG 種子相似，洗牌在會話之間變化不大，<code>all_questions</code> 的早期元素 — 如索引 0、1、2 — 會保持大致相同。因此，玩家反复看到相同的問題（例如 IDs 1、100、233、301）。黃色車站的事件使用 <code>random.choice()</code> 挑選，也面臨同樣的問題。</p>
+
+        <h2>第一個解決方法：雙重洗牌</h2>
+        <p>我最初的修復方法很簡單：洗牌兩次。代碼如下：</p>
+        <pre>
+all_questions = [(cat, q) for cat in questions for q in questions[cat]]
+random.shuffle(all_questions)
+custom_print(f"已將 all_questions 洗牌一次...")
+        </pre>
+        <p>在會話開始時：</p>
+        <pre>
+random.shuffle(all_questions)
+custom_print(f"為新遊戲會話洗牌 {len(all_questions)} 個問題")
+        </pre>
+        <p>我認為更多洗牌等於更多混亂，對吧？錯了。相同的問題還是頻繁出現。PRNG 種子默認與系統時鐘綁定，變化不足，而我的選擇方法將我鎖定在列表的前端。</p>
+
+        <h2>第二個解決方法：用納秒播種</h2>
+        <p>接下來，我使用 <code>time.time_ns()</code> 提升種子的精確度到納秒級：</p>
+        <pre>
+random.seed(time.time_ns())
+random.shuffle(all_questions)
+custom_print(f"使用種子 {time.time_ns()} 洗牌 {len(all_questions)} 個問題")
+        </pre>
+        <p>這有些幫助 — 種子更獨特 — 但選擇仍依賴 <code>question_count</code>。列表前端的項目仍占主導地位，440 個問題的龐大，但洗牌幅度不足以打破模式。</p>
+
+        <h2>突破：隨機索引挑選</h2>
+        <p>我的 vibe coding 夥伴 Grok 3 出場了。它指出真正的缺陷：如果我總是按可預測的方式循環，為什麼要洗牌？於是我改用 <code>random.randint()</code> 來挑選問題：</p>
+        <pre>
+question_idx = random.randint(0, len(all_questions) - 1)
+category, question_data = all_questions[question_idx]
+        </pre>
+        <p>砰 — 現在每個問題每次都有 1/440 的機會被選中，無論列表順序如何。納秒種子保持 PRNG 在會話間的新鮮度，重複現象大致消失了，但仍有跡可尋。</p>
+
+        <h2>人性化的轉折：自定義種子風格</h2>
+        <p>Grok 建議使用完整的 <code>time.time_ns()</code>，但我想按自己的方式來。我設計了這個：</p>
+        <pre>
+random.seed((time.time_ns() % 10**9) / 1000)
+random.shuffle(all_questions)
+custom_print(f"使用種子 {(time.time_ns() % 10**9) / 1000} 洗牌 {len(all_questions)} 個問題")
+        </pre>
+        <p>只取納秒時間戳的最後 9 位（例如 823074000）並除以 1000（得到 823074.0），因為我發現最後嗰個位的前六個位的數字變化最大。於是這樣就給了我一個有趣的浮點種子，仍然適用於 <code>random.seed()</code>。感覺很動態，測試中也保持了不可預測性。</p>
+
+        <h2>修復事件</h2>
+        <p>黃色車站的事件也需要調整。原本是：</p>
+        <pre>
+event_list = seasonal_events[current_season]
+event_tuple = random.choice(event_list)
+        </pre>
+        <p>我將其與問題的修復對齊：</p>
+        <pre>
+event_idx = random.randint(0, len(event_list) - 1)
+event_tuple = event_list[event_idx]
+custom_print(f"為 {current_season} 季節選中事件索引：{event_idx}")
+        </pre>
+        <p>使用相同的自定義種子，遊戲內的事件，大致上都隨機出現了，沒有特別偏向某一個事件。</p>
+
+        <h2>最終配方</h2>
+        <p>解決方案由三個要素組成：自定義種子 (<code>(time.time_ns() % 10**9) / 1000</code>)、<code>random.randint()</code> 用於挑選，以及日誌確認其有效。沒有了可預計重複性 — 只有純粹的、充滿活力的隨機性。</p>
+
+        <h2>Vibe Coding 的實踐</h2>
+        <p>我在玩遊戲時發現了可預計的隨機性 — AI 無法「感覺」到這一點。我調整了洗牌和種子變化，然後 Grok 帶著 <code>random.randint()</code> 介入，解決了技術問題。我們一起解決了隨機化問題。</p>
+
+        <h2>為何人類依然主宰</h2>
+        <p>AI 很出色，但它不能在沒有我玩遊戲的情況下發現遊戲「感覺不對」。由於我的數據科學背景，我之前就遇到過隨機化問題，所以我知道PRNG的成因和下一步該往哪個方向走。我推動了願景方向，Grok 完善了它。我相信這就是 vibe coding 的魔力 — 人類的經驗和願景與 AI 的力量相遇。</p>
+
+        <h2>總結</h2>
+        <p>修復《<i>小熊諾樂GO！</i>》的創造是一個難忘的旅程。今次這個問題，從雙重洗牌到自定義種子與索引挑選系統，現在每次玩這個遊戲都帶來滿足感。如果你正在編碼某樣東西，相信你的直覺，與 AI 一起 vibe，然後發布它！🚂</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>由EntzYeung開發</p>
+        <p><a href="https://github.com/entzyeung">GitHub 個人資料</a> | <a href="/cdn-cgi/l/email-protection#b893968c828196869d94b89f95999194d69b9795">聯繫</a></p>
+        <p><a href="index.html">返回小熊諾樂GO！首頁</a></p>
+        <p>© 2025 小熊諾樂GO！香港版。版權所有。</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="consent.js"></script>
+    <script>/* Script remains unchanged */</script>
+</body>
+
+</html>f
