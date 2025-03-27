@@ -14,6 +14,7 @@
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
+            overflow-x: hidden; /* Prevent horizontal overflow */
         }
         a {
             color: #3498db;
@@ -47,13 +48,13 @@
             font-weight: 700;
         }
         .content {
-            max-width: 770px;
+            max-width: 700px;
             margin: 40px auto;
             padding: 0 20px;
         }
         .content .landscape-img {
             width: 100%;
-            max-width: 770px;
+            max-width: 100%; /* Override the 770px rule */
             height: auto;
             margin-bottom: 0px;
             border-radius: 5px;
@@ -71,6 +72,9 @@
         .content p {
             margin: 15px 0;
         }
+        .content a {
+            word-wrap: break-word; /* Break at normal word boundaries, but allow breaking within words if needed */
+        }
 
         .content pre {
             background: #f8f8f8;
@@ -79,8 +83,10 @@
             overflow-x: auto;
             font-family: 'Courier New', Courier, monospace;
             font-size: 0.9em;
-            white-space: pre;
+            white-space: pre-wrap; /* Allow wrapping if needed, fallback for older browsers */
             line-height: 1.1;
+            max-width: 100%;
+            box-sizing: border-box;
         }
 
         .pic_description {
@@ -100,8 +106,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%; /* Fills container */
-            height: 100%; /* Fills container */
+            width: 100% !important; /* Force override if needed */
+            height: 100% !important;
         }
 
         .chart-container {
@@ -139,6 +145,10 @@
             font-size: 0.9em;
         }
 
+        header, footer {
+            box-sizing: border-box;
+            max-width: 100vw; /* Ensure they don’t exceed viewport width */
+        }
         footer {
             background-color: #5f1a04;
             color: white;
@@ -174,8 +184,9 @@
     <!-- Main Content -->
     <div class="content">
         <div class="video-container">
-            <iframe width="770" height="433" src="https://www.youtube.com/embed/z7JfpJKUDOw?autoplay=1&start=403&mute=1&loop=1&playlist=z7JfpJKUDOw" title="Lorye Go! Hong Kong under development in early stage." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/z7JfpJKUDOw?autoplay=1&start=403&mute=1&loop=1&playlist=z7JfpJKUDOw" title="Lorye Go! Hong Kong under development in early stage." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+
         <p class="pic_description">Lorye Go! Hong Kong under development in early stage.</p>
         
         
@@ -227,16 +238,14 @@
         <h2>The Grind in Numbers</h2>
         <p>I kicked off this project around March 1st, diving in with full-on vibe-coding energy. Day and night, I was at it—logging at least 6 hours daily during the week and cranking it up to 18 hours on weekends. Not a single day off. The journey’s left its mark: 109 development scripts tracked and 950 log files piled up in my records. Even the animations, simple as they seem with just 3 frames each, took serious effort—averaging over 4 hours per set to get them just right.</p>
 
-        <div class="chart-container">
-            <div class="bar" style="height: 60px;">
-                <span class="bar-value">109</span>
-                <span class="bar-label">Scripts</span>
-            </div>
-            <div class="bar" style="height: 285px;">
-                <span class="bar-value">950</span>
-                <span class="bar-label">Log Files</span>
-            </div>
-        </div>
+        <!-- <pre>
+            map_layout = {
+                0: {"name": "Hong Kong", "line": "TCL", "connections": [25, 108], "x": 3516, "y": 3063, "type": "city", "assets": [...]},
+                1: {"name": "Kowloon",   "line": "TCL", "connections": [2, 104, 106], "x": 2752, "y": 3063, "type": "city", "assets": [...]},
+                2: {"name": "Olympic",   "line": "TCL", "connections": [1, 3], "x": 2952, "y": 3063, "type": "city", "assets": [...]},
+                ...
+            }
+        </pre> -->
 
         <h2>Anyway A Love Letter Delivered</h2>
         <p>Despite the hiccups, <i>Lorye Go!</i> came to life. Players can now roll dice across a vibrant MTR map, buy properties like “FUNERAL HOME” and laugh at events like “King Rexy's invasion” (a nod to Hong Kong’s quirky chaos). It’s not perfect — balance still needs polish, and the map could use more finesse — but it’s mine, and it’s for Hong Kongers. Hype coding with Grok 3 gave me the push to start, the tools to build, and the confidence to finish.</p>
