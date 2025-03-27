@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Coding Journey - Lorye Go! News</title>
+    <link rel="icon" type="image/x-icon" href="pics/game_icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header {
+            background-color: #5f1a04;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #34495e;
+        }
+        header .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header nav {
+            margin-top: 10px;
+        }
+        header nav a {
+            color: #ecf0f1;
+            margin: 0 15px;
+            font-weight: 700;
+        }
+        .content {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .content .landscape-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 0px;
+            border-radius: 5px;
+        }
+        .content h1 {
+            font-size: 2.5em;
+            color: #515151;
+            margin-bottom: 10px;
+        }
+        .content h2 {
+            font-size: 1.5em;
+            color: #e74c3c;
+            margin-top: 30px;
+        }
+        .content p {
+            margin: 15px 0;
+        }
+        .content a {
+            word-wrap: break-word;
+        }
+        .content pre {
+            background: #f8f8f8;
+            padding: 5px;
+            border-left: 4px solid #3498db;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            white-space: pre-wrap;
+            line-height: 1.1;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        .pic_description {
+            margin-top: 0px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .video-container {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            position: relative;
+            margin-bottom: 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+        footer {
+            background-color: #5f1a04;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 4px solid #34495e;
+        }
+        footer a {
+            color: #ecf0f1;
+            margin: 0 10px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        .consent-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            max-width: 400px;
+            margin: auto;
+        }
+        .consent-popup p {
+            margin: 0 0 15px;
+            font-size: 14px;
+        }
+        .consent-popup button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .consent-popup button:hover {
+            background: #2980b9;
+        }
+        .consent-popup .decline {
+            background: #e74c3c;
+        }
+        .consent-popup .decline:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="consent-popup" id="consentPopup" style="display: none;">
+        <p>We use cookies and analytics to improve your experience. By continuing, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+        <button onclick="acceptTracking()">Accept</button>
+        <button class="decline" onclick="declineTracking()">Decline</button>
+    </div>
+    <noscript id="gtm-noscript"></noscript>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html"><img src="pics/logo.eng.png" alt="Lorye Go! Hong Kong Edition Logo" class="logo"></a>
+        <h1>Lorye Go! Hong Kong Edition - News</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#download">Download</a>
+            <a href="https://github.com/entzyeung/LoryeGo">GitHub</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/el2SWws_yZc?autoplay=1&start=403&mute=1&loop=1&playlist=el2SWws_yZc" title="Lorye Go! Hong Kong Edition Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="pic_description">Lorye Go! Hong Kong Edition gameplay showcasing randomization in action.</p>
+
+        <h1>Vibe Coding Journey: <br>Solving Randomization Issues in "Lorye Go! 香港版"</h1>
+        <p><em>Published on March 27, 2025 by Entz Yeung</em></p>
+
+        <h2>A New Challenge: Predictable Randomness</h2>
+        <p>As the developer of <i>Lorye Go! 香港版</i>, I’ve been vibing with AI to bring this train-themed board game to life for 3 weeks now. I hit a new snag: the randomization of questions and events wasn’t as random as it should’ve been. With 440 trivia questions and seasonal events tied to yellow stations, I wanted every game to feel fresh. Instead, players kept seeing the same questions — like QIDs 1, 100, 233, 301 — popping up way too often. Events felt off too, though less obvious with fewer options. This log dives into how I tackled this with AI.</p>
+
+        <h2>The Culprit: PRNG and Predictable Patterns</h2>
+        <p>The issue stemmed from Python’s <code>random</code> module, a pseudorandom number generator (PRNG) that’s deterministic by nature. Without a varied seed, it spits out similar sequences. In my game, first I shuffled the question list twice — once at startup and once per session — but the selection still used <code>question_count % len(all_questions)</code>. If question_count resets to 0 at the start of each game, I always picking from the start of the shuffled list. If the shuffle doesn’t vary much between sessions due to a similar PRNG seed, the early elements of all_questions — say, indices 0, 1, 2 — stay roughly the same. So, players see the same questions (e.g., IDs 1, 100, 233, 301) repeatedly. Yellow station events, picked with <code>random.choice()</code>, risked the same fate.</p>
+
+        <h2>First Try: Double Shuffle</h2>
+        <p>My initial fix was straightforward: shuffle twice. Here’s how it looked:</p>
+        <pre>
+all_questions = [(cat, q) for cat in questions for q in questions[cat]]
+random.shuffle(all_questions)
+custom_print(f"Shuffled all_questions one time...")
+        </pre>
+        <p>And at the session start:</p>
+        <pre>
+random.shuffle(all_questions)
+custom_print(f"Shuffled {len(all_questions)} questions for new game session")
+        </pre>
+        <p>I figured more shuffling equals more chaos, right? Nope. The same questions kept showing up. The PRNG seed, tied to the system clock by default, wasn’t varying enough, and my selection method locked me into the list’s front end.</p>
+
+        <h2>Second Try: Seeding with Nanoseconds</h2>
+        <p>Next, I jazzed up the seed using <code>time.time_ns()</code> for nanosecond precision:</p>
+        <pre>
+random.seed(time.time_ns())
+random.shuffle(all_questions)
+custom_print(f"Shuffled {len(all_questions)} questions with seed {time.time_ns()}")
+        </pre>
+        <p>This helped a bit—seeds were more unique—but the selection still leaned on <code>question_count</code>. Early list items dominated, and the massive 440-question pool didn’t shuffle wildly enough to break the pattern.</p>
+
+        <h2>Breakthrough: Random Index Picking</h2>
+        <p>Enter Grok 3, my vibe coding buddy. It pointed out the real flaw: why shuffle at all if I’m cycling predictably? Instead, I switched to <code>random.randint()</code> for question picks:</p>
+        <pre>
+question_idx = random.randint(0, len(all_questions) - 1)
+category, question_data = all_questions[question_idx]
+        </pre>
+        <p>Boom—every question now had a 1/440 shot each time, no matter the list order. The nanosecond seed kept the PRNG fresh across sessions, and repetition vanished.</p>
+
+        <h2>Human Twist: Custom Seed Vibes</h2>
+        <p>Grok suggested the full <code>time.time_ns()</code>, but I wanted to vibe it my way. I cooked up this:</p>
+        <pre>
+random.seed((time.time_ns() % 10**9) / 1000)
+random.shuffle(all_questions)
+custom_print(f"Shuffled {len(all_questions)} questions with seed {(time.time_ns() % 10**9) / 1000}")
+        </pre>
+        <p>Taking the last 9 digits of the nanosecond timestamp (e.g., 823074000) and dividing by 1000 (to 823074.0) gave me a funky, floating-point seed that still rocked with <code>random.seed()</code>. It felt dynamic, and in testing, it kept things unpredictable.</p>
+
+        <h2>Fixing Events Too</h2>
+        <p>Yellow station events needed love too. Originally:</p>
+        <pre>
+event_list = seasonal_events[current_season]
+event_tuple = random.choice(event_list)
+        </pre>
+        <p>I aligned it with the question fix:</p>
+        <pre>
+event_idx = random.randint(0, len(event_list) - 1)
+event_tuple = event_list[event_idx]
+custom_print(f"Selected event index: {event_idx} for season {current_season}")
+        </pre>
+        <p>Using the same custom seed, events now popped up randomly, no favoritism.</p>
+
+        <h2>The Final Recipe</h2>
+        <p>The solution clicked with three ingredients: a custom seed (<code>(time.time_ns() % 10**9) / 1000</code>), <code>random.randint()</code> for picking, and logs to confirm it worked. No more patterns—just pure, vibey randomness.</p>
+
+        <h2>Vibe Coding in Action</h2>
+        <p>I spotted the repetition playing the game — AI can’t “feel” that. I tinkered with shuffles and seeds changes, then Grok swooped in with <code>random.randint()</code>, nailing the tech fix. Together, we solved the randomization issue.</p>
+
+        <h2>Why Humans Still Rule</h2>
+        <p>AI’s slick, but it won’t catch a game feeling “off” without me playing it. And because of my data science background, I have faced the randomization issue before, so I kind of know which is the right direction we should head to next. So I drove the vision; Grok refined it. I believe this could be the magic of vibe coding — human's experience and vision meets AI muscle.</p>
+
+        <h2>Wrapping Up</h2>
+        <p>Fixing randomization in <i>Lorye Go!</i> was a blast. From double shuffles to a custom-seeded, index-picking system, it’s now a wild ride every time. If you’re coding something, trust your instincts, vibe with AI, and ship it. Enjoy the game, Hong Kongers—randomness awaits! 🚂</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Developed by Entz Yeung</p>
+        <p><a href="https://github.com/entzyeung">GitHub Profile</a> | <a href="/cdn-cgi/l/email-protection#f893968c828196869d94b89f95999194d69b9795">Contact</a></p>
+        <p><a href="index.html">Back to Lorye Go! Homepage</a></p>
+        <p>© 2025 Lorye Go! Hong Kong Edition. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email opération-decode.min.js"></script>
+    <script src="consent.js"></script>
+</body>
+</html>
