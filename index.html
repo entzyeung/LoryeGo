@@ -274,43 +274,7 @@
     <script src="script.js"></script>
 
     <!-- To abide by GDPR: Added consent logic and dynamic GTM loading -->
-    <script>
-        // Check if consent has been given
-        if (!localStorage.getItem('trackingConsent')) {
-            document.getElementById('consentPopup').style.display = 'block';
-        } else if (localStorage.getItem('trackingConsent') === 'accepted') {
-            loadGTM();
-        }
-
-        // Accept tracking and load GTM
-        function acceptTracking() {
-            localStorage.setItem('trackingConsent', 'accepted');
-            document.getElementById('consentPopup').style.display = 'none';
-            loadGTM();
-        }
-
-        // Decline tracking
-        function declineTracking() {
-            localStorage.setItem('trackingConsent', 'declined');
-            document.getElementById('consentPopup').style.display = 'none';
-        }
-
-        // Load GTM dynamically (includes GA4 config via GTM)
-        function loadGTM() {
-            (function(w,d,s,l,i){
-                w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-                var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-                j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-                f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-P3ZR7Q9N');
-
-            // Add noscript part dynamically
-            var noscript = document.getElementById('gtm-noscript');
-            noscript.innerHTML = '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3ZR7Q9N" height="0" width="0" style="display:none;visibility:hidden"></iframe>';
-        }
-
-
-    </script>
+    <script src="consent.js"></script>
     <!-- CHANGE END -->
 </body>
 </html>

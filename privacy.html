@@ -1,22 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-            <!-- Google tag (gtag.js) -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXFTZ4L9XL"></script>
-            <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-        
-            gtag('config', 'G-ZXFTZ4L9XL');
-            </script>
-            <!-- Google Tag Manager -->
-            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                })(window,document,'script','dataLayer','GTM-P3ZR7Q9N');</script>
-            <!-- End Google Tag Manager -->
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -98,14 +83,52 @@
         footer p {
             margin: 5px 0;
         }
+
+
+        .consent-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            max-width: 400px;
+            margin: auto;
+        }
+        .consent-popup p {
+            margin: 0 0 15px;
+            font-size: 14px;
+        }
+        .consent-popup button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .consent-popup button:hover {
+            background: #2980b9;
+        }
+        .consent-popup .decline {
+            background: #e74c3c;
+        }
+        .consent-popup .decline:hover {
+            background: #c0392b;
+        }
     </style>
 </head>
 <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3ZR7Q9N"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <!-- Header -->
+    <div class="consent-popup" id="consentPopup" style="display: none;">
+        <p>We use cookies and analytics to improve your experience. By continuing, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+        <button onclick="acceptTracking()">Accept</button>
+        <button class="decline" onclick="declineTracking()">Decline</button>
+    </div>
+    <noscript id="gtm-noscript"></noscript>
 
     <header>
         <img src="pics/logo.eng.png" alt="Lorye Go! Hong Kong Edition Logo" class="logo">
@@ -180,5 +203,8 @@
         <p><a href="index.html">Back to Lorye Go! Homepage</a></p>
         <p>© 2025 Lorye Go! Hong Kong Edition. All rights reserved.</p>
     </footer>
+
+    <!-- Consent -->
+    <script src="consent.js"></script>
 </body>
 </html>
