@@ -1,44 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- To abide by GDPR: Removed direct GA4 script, will load via GTM after consent -->
+    <!-- Previously:
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXFTZ4L9XL"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-ZXFTZ4L9XL');
     </script>
-    <!-- Google Tag Manager -->
+    -->
+    <!-- GTM script moved to dynamic loading in body script -->
+    <!-- Previously:
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-P3ZR7Q9N');</script>
-    <!-- End Google Tag Manager -->
-
+    -->
+    <!-- CHANGE END -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorye Go! Hong Kong Edition - A Train-Themed Board Game</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- To abide by GDPR: Added inline CSS for consent popup -->
+    <style>
+        .consent-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            max-width: 400px;
+            margin: auto;
+        }
+        .consent-popup p {
+            margin: 0 0 15px;
+            font-size: 14px;
+        }
+        .consent-popup button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .consent-popup button:hover {
+            background: #2980b9;
+        }
+        .consent-popup .decline {
+            background: #e74c3c;
+        }
+        .consent-popup .decline:hover {
+            background: #c0392b;
+        }
+    </style>
+    <!-- CHANGE END -->
 </head>
 <body>
-    <!-- Header Section -->
-    <!-- Google Tag Manager (noscript) -->
+    <!-- To abide by GDPR: Modified GTM noscript to load dynamically -->
+    <noscript id="gtm-noscript"></noscript>
+    <!-- Previously:
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3ZR7Q9N"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    -->
+    <!-- CHANGE END -->
 
+    <!-- To abide by GDPR: Added consent popup -->
+    <div class="consent-popup" id="consentPopup" style="display: none;">
+        <p>We use cookies and analytics to improve your experience. By continuing, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+        <button onclick="acceptTracking()">Accept</button>
+        <button class="decline" onclick="declineTracking()">Decline</button>
+    </div>
+    <!-- CHANGE END -->
 
+    <!-- Header Section -->
     <header>
-
         <div class="header-content">
             <div class="main-visual">
                 <img src="pics/logo.eng.png" alt="Lorye Go! Hong Kong Edition Logo" class="logo">
-                <H1>Lorye Go！Hong Kong Edition</H1>
+                <h1>Lorye Go! Hong Kong Edition</h1>
                 <p>A Fun Train-Themed Board Game</p>
             </div>
             <div class="download-section">
@@ -57,9 +108,8 @@
         </div>
     </header>
 
-    <!-- Main Content -->
+    <!-- Main Content (unchanged) -->
     <main>
-        <!-- About Section -->
         <section id="about" class="content-section">
             <h2>About the Game</h2>
             <div class="readme-buttons">
@@ -72,13 +122,11 @@
             </div>
         </section>
 
-        <!-- News Section (Card Carousel) -->
         <section id="news" class="content-section">
             <h2>News</h2>
             <div class="news-carousel-container">
                 <button class="carousel-btn left" onclick="scrollCarousel('left')">❮</button>
                 <div class="news-carousel" id="newsCarousel">
-                    <!-- New Article -->
                     <div class="news-card">
                         <div class="news-image">
                             <img src="pics/news/news-hype-coding.jpg" alt="Hype Coding Lorye Go!">
@@ -146,7 +194,6 @@
             </div>
         </section>
 
-        <!-- Screenshots Section -->
         <section id="screenshots" class="content-section">
             <h2>Screenshots</h2>
             <div class="screenshot-carousel-container">
@@ -189,7 +236,6 @@
             </div>
         </section>
 
-        <!-- How to Play Section -->
         <section id="how-to-play" class="content-section">
             <h2>How to Play</h2>
             <ul>
@@ -201,7 +247,6 @@
             </ul>
         </section>
 
-        <!-- Download Section -->
         <section id="download" class="content-section">
             <h2>Get the Game</h2>
             <p>Download the latest version of Lorye Go! Hong Kong Edition for Windows or Mac and start playing today!</p>
@@ -219,10 +264,69 @@
     <!-- Footer -->
     <footer class="content-section">
         <p>Developed by Entz Yeung | <a href="https://github.com/entzyeung">GitHub Profile</a> | <a href="/cdn-cgi/l/email-protection#391c170d03001c0c171e391e14181015571a1614">Contact</a></p>
+        <!-- To abide by GDPR: Added Privacy Policy link -->
+        <p><a href="privacy.html">Privacy Policy</a></p>
+        <!-- CHANGE END -->
         <p>© 2025 Lorye Go! Hong Kong Edition. All rights reserved.</p>
     </footer>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="script.js"></script>
+
+    <!-- To abide by GDPR: Added consent logic and dynamic GTM loading -->
+    <script>
+        // Check if consent has been given
+        if (!localStorage.getItem('trackingConsent')) {
+            document.getElementById('consentPopup').style.display = 'block';
+        } else if (localStorage.getItem('trackingConsent') === 'accepted') {
+            loadGTM();
+        }
+
+        // Accept tracking and load GTM
+        function acceptTracking() {
+            localStorage.setItem('trackingConsent', 'accepted');
+            document.getElementById('consentPopup').style.display = 'none';
+            loadGTM();
+        }
+
+        // Decline tracking
+        function declineTracking() {
+            localStorage.setItem('trackingConsent', 'declined');
+            document.getElementById('consentPopup').style.display = 'none';
+        }
+
+        // Load GTM dynamically (includes GA4 config via GTM)
+        function loadGTM() {
+            (function(w,d,s,l,i){
+                w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-P3ZR7Q9N');
+
+            // Add noscript part dynamically
+            var noscript = document.getElementById('gtm-noscript');
+            noscript.innerHTML = '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3ZR7Q9N" height="0" width="0" style="display:none;visibility:hidden"></iframe>';
+        }
+
+        // Virtual page view handling for news pages (only tracks if consented)
+        function loadNewsPage(pageUrl) {
+            fetch(pageUrl)
+                .then(response => response.text())
+                .then(html => {
+                    document.querySelector('main').innerHTML = html.match(/<div class="content">([\s\S]*?)<\/div>/)[1];
+                    if (localStorage.getItem('trackingConsent') === 'accepted') {
+                        window.dataLayer.push({'event': 'page_view', 'page_path': pageUrl});
+                    }
+                });
+        }
+        document.querySelectorAll('.news-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                loadNewsPage(btn.getAttribute('href'));
+            });
+        });
+    </script>
+    <!-- CHANGE END -->
 </body>
 </html>
