@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // News Carousel logic
 let currentIndex = 0;
-const totalCards = 4;
+const totalCards = 5;
 const cardWidth = 280 + 20; // Card width (280px) + margin (20px)
 
 function scrollCarousel(direction) {

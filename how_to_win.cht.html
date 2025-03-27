@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何在小熊諾樂GO！香港版中獲勝 - 小熊諾樂GO！新聞</title>
+    <link rel="icon" type="image/x-icon" href="pics/game_icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header {
+            background-color: #5f1a04;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #34495e;
+        }
+        header .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header nav {
+            margin-top: 10px;
+        }
+        header nav a {
+            color: #ecf0f1;
+            margin: 0 15px;
+            font-weight: 700;
+        }
+        .content {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .content .landscape-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 0px;
+            border-radius: 5px;
+        }
+        .content h1 {
+            font-size: 2.5em;
+            color: #515151;
+            margin-bottom: 10px;
+        }
+        .content h2 {
+            font-size: 1.5em;
+            color: #e74c3c;
+            margin-top: 30px;
+        }
+        .content p {
+            margin: 15px 0;
+        }
+        .content a {
+            word-wrap: break-word;
+        }
+        .content pre {
+            background: #f8f8f8;
+            padding: 5px;
+            border-left: 4px solid #3498db;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            white-space: pre-wrap;
+            line-height: 1.1;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        .pic_description {
+            margin-top: 0px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .video-container {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            position: relative;
+            margin-bottom: 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+        footer {
+            background-color: #5f1a04;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 4px solid #34495e;
+        }
+        footer a {
+            color: #ecf0f1;
+            margin: 0 10px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        .consent-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            max-width: 400px;
+            margin: auto;
+        }
+        .consent-popup p {
+            margin: 0 0 15px;
+            font-size: 14px;
+        }
+        .consent-popup button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .consent-popup button:hover {
+            background: #2980b9;
+        }
+        .consent-popup .decline {
+            background: #e74c3c;
+        }
+        .consent-popup .decline:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="consent-popup" id="consentPopup" style="display: none;">
+        <p>我們使用 cookies 和 analytics 來提升您的體驗。繼續使用即表示您同意我們的 <a href="privacy.html">隱私政策</a>。</p>
+        <button onclick="acceptTracking()">接受</button>
+        <button class="decline" onclick="declineTracking()">拒絕</button>
+    </div>
+    <noscript id="gtm-noscript"></noscript>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html"><img src="pics/logo.eng.png" alt="小熊諾樂GO！香港版 Logo" class="logo"></a>
+        <h1>小熊諾樂GO！香港版 - 新聞</h1>
+        <nav>
+            <a href="index.html">首頁</a>
+            <a href="index.html#about">關於</a>
+            <a href="index.html#download">下載</a>
+            <a href="https://github.com/entzyeung/LoryeGo">GitHub</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>如何在小熊諾樂GO！香港版中獲勝：<br>策略與秘訣</h1>
+        <p><em>由EntzYeung於2025年3月27日發布</em></p>
+
+        <p>嘿，玩家們！謝謝你們遊玩《<i>小熊諾樂GO！香港版</i>》— 一款在遊走在香港地鐵線上、買物業、回答 trivia 的冒險遊戲。這是一場浪漫的香港旅程，但說實話：贏得勝利不只是靠運氣。季節性事件、車站驚喜和 trivia 獎勵會為你帶來各種挑戰！雖然一切看似無定向風好難捉摸，但其中是有方法可循的。作為首席遊戲開發者，我要為你們揭秘如何增加勝算。咁你準備好稱霸遊戲了嗎？讓我們開始吧！</p>
+
+        <h2>理解遊戲核心</h2>
+        <p>首先是基礎：你從 $1,000 現金開始。擲骰子移動，在城市購買資產，在問號站回答 trivia 問題，避開或利用事件賺錢。目標是什麼？在遊戲年限結束時（在設置時確定）累積最多的總資產（現金 + 物業價值）。很簡單，對吧？不完全是 — 隨機事件和 trivia 問題可以讓你成功或者失敗。以下教你如何聰明地玩。</p>
+
+        <h2>骰子</h2>
+        <p>骰子（1-6）是你基本的前進方法，每個數字有 16.67% 的均等機率，所以關鍵在於路徑規劃。你需要找到到達目的地的最短路線。所以，研究路線 — 如東涌線 (TCL) 或荃灣線 (TSW) — 並瞄準：
+        <ul>
+            <li>高價值城市：「旺角」或「尖沙咀」擁有好肥美的資產，</li>
+            <li>問號站：「問號站」提供 trivia 獎勵。因為這款遊戲希望你在玩樂中學習，所以答錯的懲罰遠低於答對的獎勵；這意味著熟悉香港知識並在需要快速現金時造訪問號站絕對是明智之舉！</li>
+        </ul>
+        </p>
+
+        <h2>掌握季節性事件</h2>
+        <p>季節性事件在你移動後隨機觸發，每回合有 18% 的隱秘機率。這些事件與四季（「春季」、「夏季」、「秋季」、「冬季」）相關，每季都有獎勵和懲罰的混合。每個季節的事件機率均等。我們來分解一下：</p>
+        <p>每個季節中，你大約有 4% 的機會傳送到目的地。這意味著即使你每回合漫無目的徘徊，你仍有 4% 的機會飛到目的地。這樣設定的原因是，我想讓遊戲對孩子們保持希望，即使他們離目的地很遠。即使距離目的地有 36 步，他們仍然是有機會去到目的地的，就好似人生一樣充滿希望。而遊戲棋盤上最遠的兩站之間是「屯門」和「柴灣」，最短路徑為 36 步。</p>
+        <p><strong>策略：</strong></p>
+        <p>春季有 60% 的收益機率，只有 40% 的損失機率，所以春季是低風險季節。</p>
+        <p>夏季很混亂 — 44% 正面，44% 負面，11% 中性。所以在夏季確保口袋裡留點現金。</p>
+        <p>秋季是金礦 — 67% 正面，17% 負面，17% 中性。如果你在一些高價值回報的資產附近，試著在這季節積累現金，玩多一點問答 — 並準備好在冬季購買這些高回報物業。因為冬季之後就是發薪日，你會拿回應得的錢並能再次投資。</p>
+        <p>冬季很殘酷 — 43% 負面，29% 正面，29% 變數。雖然這是投資的最佳月份，但盡量避免花光所有錢。始終盡量保持現金在 $777 以上，因為這個月最糟的季節懲罰是 $777。</p>嗯
+
+        <h2>車站事件：隱藏的金礦</h2>
+        <p>黃色「機會」站裏面會有50個事件會隨機觸發，每個有 2% 的機率。你絕對有理由去黃色站！因為黃色站的收益範圍是從 +$1,980 到 -$689：</p>
+        <ul>
+            <li>扭轉命運：+$1,980 (AI Boom)、+$1,500 (New Year) — 罕見，但回報巨大，你會有 2% 機率拿到 AI Boom，2% 機率拿到新年紅包。</li>
+            <li>穩定收益：+$500 (Harbour Sales)、+$400 (New Mall) — 可靠的提升你的資產。</li>
+            <li>損失：-$689 (SARS Crash)、-$500 (Tsunami) — 會給你嚴重打擊，但不會抵消獲得扭轉命運的可能性。</li>
+            <li>另外還有移動：「Closer/Farther」，這些都會移動你 1 步；「Lose Business」，就是會令你隨機丟失一個資產。</li>
+        </ul>
+        <p><strong>策略：</strong></p>
+        <ol>
+            <li>在黃站裏面，60% 是正面的 (+$100 到 +$1,980)，</li>
+            <li>僅 36% 是負面的 (-$100 到 -$689)，</li>
+            <li>4% 是混合的。</li>
+            <li>遊戲早期，可以不停到黃站以賺取現金 — +$1,980 已經可以為遊戲中其中一個最貴的物業「豪華酒店」 ($3,000) 提供差不多六成資金。而且因為你開始有 $1,000，而黃色站最糟也只會 -$689，所以為什麼不試試？但是到了。遊戲後期，如果你資產豐富，就跳過它們吧 — 因為當你負錢時，「Lose Business」對你的投資組合傷害更大。</li>
+        </ol>
+
+        <h2>Trivia 站：知識就是力量，還真能賺錢</h2>
+        <p>問號站每次在你踏上時會從 440 個 trivia 問題中隨機抽取一題。正確答案的獎勵如下：</p>
+        <ul>
+            <li><strong>Fly to Destination</strong>：立即獲勝 + $1,000 如果是城市（10% 機率）。</li>
+            <li>+$200：現金獎勵（50% 機率）。</li>
+            <li>+$400：現金獎勵（40% 機率）。</li>
+        </ul>
+        <p>答錯問題：</p>
+        <ul>
+            <li><strong>-$100 (33%)</strong>：有點痛。</li>
+            <li><strong>-$50 (33%)</strong>：輕微懲罰。</li>
+            <li><strong>$0 (33%)</strong>：免費通行。</li>
+        </ul>
+        <p><strong>策略：</strong>機率公平，正確獎勵是 50% +$200、40% +$400 、10% 傳送。錯誤是均等的 33% 分割。只要你達到 13.89% 的準確率，就能收支平衡 — 收益抵消損失。低於此，你平均會虧錢。所以，快啲去溫習吓香港歷史、文化和地鐵知識。不難的。又或者你可以選擇多玩幾輪，你就好容易達到甚至乎超過13%的準確率。</p>
+
+        <h2>資產處理方法：</h2>
+        <p>一般車站提供回報率1% 到 300%。所以你應該從便宜、高回報的購買開始購買，因為它們回本快，能緩衝損失。敬請查看下一篇<a href="file:///Users/lorentzyeung/Desktop/github/LoryeGo/must_buy_property.cht.html">50%+ 回報的列表</a>，例如「街頭小食店」在「旺角」只需要成本$100就有300% = $300/年的回報。中期，搶中檔資產如「Danki日式超市」，也只是$900，但又有80%的穩定收益。後期，如果現金充足，搶高價值瑰寶如「1/2島酒店」 ($3,000, 30% = $900/年)。</p>
+        <p>但都要注意以下一些特別事項：</p>
+        <ul>
+            <li>免費物業：夏季/秋季會有突發贈送資產事件。</li>
+            <li>丟失物業：買多一點便宜資產（例如 $50 的「雞蛋仔店」）作為犧牲品。</li>
+            <li>熱門選擇：「深水埗」和「旺角」是金礦 — 便宜 $100 但 300% 回報。</li>
+            <li>「紅磡」有「殯儀館」 $1,500 但會帶來200% 的龐大收益。</li>
+            <li>避免陷阱，如啟德的「郵輪碼頭」，就是-20%，除非你走投無路。</li>
+        </ul>
+
+        <h2>債務防禦</h2>
+        <p>如果現金低於 $0，將被迫半價賣資產。避免這一點，所以要保持 $777 的緩衝，以應對冬季最糟的打擊。</p>
+
+        <h2>階段性獲勝計劃</h2>
+        <ul>
+            <li><strong>早期遊戲</strong>：通過問題站(+$200/$400) 和車站事件 (+$500+) 囤積現金。買便宜的 50%+ 資產（見列表）。目標「深水埗」或「黃大仙」以高回報。</li>
+            <li><strong>中期遊戲</strong>：猛攻問號站 — 傳送到像「香港」或「尖沙咀」這樣的城市以 $500+ 購買。堆疊中檔資產（例如「電腦商場」，$1,000，90%）。</li>點半呀
+            <li><strong>末期遊戲</strong>：如果安全，確保獲得高價值資產（例如「豪華酒店」，$3,000）。否則，囤積現金 — 總資產決定勝負，所以要聰明地平衡。</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>由EntzYeung開發</p>
+        <p><a href="https://github.com/entzyeung">GitHub 個人資料</a> | <a href="/cdn-cgi/l/email-protection#b893968c828196869d94b89f95999194d69b9795">聯繫</a></p>
+        <p><a href="index.html">返回小熊諾樂GO！首頁</a></p>
+        <p>© 2025 小熊諾樂GO！香港版。版權所有。</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="consent.js"></script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'926fbd0b4d8cadb0',t:'MTc0MzA4NzQyOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

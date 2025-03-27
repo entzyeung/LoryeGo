@@ -66,7 +66,7 @@ The game has been packaged into a standalone Windows executable (`.exe`) using P
 - **Roll Dice**: Click "擲骰" (Roll Dice) on the HUD to move.
 - **Navigate Map**: Use "瀏覽地圖" (Browse Map) to explore or click stations to move.
 - **Buy Properties**: Visit city stations to purchase assets.
-- **Reach Destinations**: Arrive at the destination to earn HK$500.
+- **Reach Destinations**: Arrive at the destination to earn HK$1000.
 - **Events**: Encounter seasonal or station-specific events that may teleport you or affect your cash.
 - **Screenshots**: Press 'S' to save the current screen.
 - **Zoom**: Use 'I' to zoom in and 'O' to zoom out.
