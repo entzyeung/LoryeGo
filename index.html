@@ -309,23 +309,7 @@
             noscript.innerHTML = '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3ZR7Q9N" height="0" width="0" style="display:none;visibility:hidden"></iframe>';
         }
 
-        // Virtual page view handling for news pages (only tracks if consented)
-        function loadNewsPage(pageUrl) {
-            fetch(pageUrl)
-                .then(response => response.text())
-                .then(html => {
-                    document.querySelector('main').innerHTML = html.match(/<div class="content">([\s\S]*?)<\/div>/)[1];
-                    if (localStorage.getItem('trackingConsent') === 'accepted') {
-                        window.dataLayer.push({'event': 'page_view', 'page_path': pageUrl});
-                    }
-                });
-        }
-        document.querySelectorAll('.news-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                loadNewsPage(btn.getAttribute('href'));
-            });
-        });
+
     </script>
     <!-- CHANGE END -->
 </body>
