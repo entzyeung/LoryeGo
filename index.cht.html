@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-HK">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorye Go! Hong Kong Edition - A Train-Themed Board Game</title>
+    <title>小熊諾樂GO！香港版 - 火車主題桌遊</title>
     <link rel="icon" type="image/x-icon" href="pics/game_icon.ico">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -89,9 +89,9 @@
 <body>
     <noscript id="gtm-noscript"></noscript>
     <div class="consent-popup" id="consentPopup" style="display: none;">
-        <p>We use cookies and analytics to improve your experience. By continuing, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
-        <button onclick="acceptTracking()">Accept</button>
-        <button class="decline" onclick="declineTracking()">Decline</button>
+        <p>我們使用 cookies 和分析工具來提升您的體驗。繼續使用即表示您同意我們的 <a href="privacy.html">隱私政策</a>。</p>
+        <button onclick="acceptTracking()">接受</button>
+        <button class="decline" onclick="declineTracking()">拒絕</button>
     </div>
     <header>
         <div class="header-content">
@@ -100,106 +100,75 @@
                     <a href="index.html" class="language-btn"><span>🇬🇧</span> Eng</a>
                     <a href="index.cht.html" class="language-btn"><span>🇭🇰</span> 中文</a>
                 </div>
-                <img src="pics/logo.eng.png" alt="Lorye Go! Hong Kong Edition Logo" class="logo">
-                <h1>Lorye Go! Hong Kong Edition</h1>
-                <p>A Fun Train-Themed Board Game</p>
+                <img src="pics/logo.eng.png" alt="小熊諾樂GO！香港版標誌" class="logo">
+                <h1>小熊諾樂GO！香港版</h1>
+                <p>一款有趣的火車主題桌遊</p>
             </div>
             <div class="download-section">
                 <div class="download-buttons">
                     <a href="https://github.com/entzyeung/LoryeGo/raw/main/win/Lorye_Go_v994.exe" class="download-btn windows">
-                        <img src="pics/win.png" alt="Windows Icon" class="platform-icon"> Download for Windows
+                        <img src="pics/win.png" alt="Windows圖標" class="platform-icon"> 下載 Windows 版
                     </a>
                     <a href="https://github.com/entzyeung/LoryeGo/raw/main/mac/Lorye_Go_v994.zip" class="download-btn mac">
-                        <img src="pics/mac.png" alt="Mac Icon" class="platform-icon"> Download for Mac
+                        <img src="pics/mac.png" alt="Mac圖標" class="platform-icon"> 下載 Mac 版
                     </a>
                 </div>
                 <div class="now-available">
-                    <span>Now Available!</span>
+                    <span>現已推出！</span>
                 </div>
             </div>
         </div>
     </header>
     <main>
         <section id="about" class="content-section">
-            <h2>About the Game</h2>
+            <h2>關於遊戲</h2>
             <div class="readme-buttons">
-                <a href="https://github.com/entzyeung/LoryeGo/blob/main/README.md" class="readme-btn english">English README</a>
-
+                <a href="https://github.com/entzyeung/LoryeGo/blob/main/README.cht.md" class="readme-btn chinese">中文 README</a>
+                <a href="how_to_win.cht.html" class="readme-btn chinese">中文遊戲攻略</a>
+                <a href="must_buy_property.cht.html" class="readme-btn chinese">必買資產</a>
             </div>
-            <p>Lorye Go! Hong Kong Edition is a digital board game where players navigate Hong Kong's MTR network, buy properties, and compete to reach destinations. With seasonal events, multiplayer support for up to 4 players, and custom graphics, it’s a unique blend of strategy and fun!</p>
+            <p>小熊諾樂GO！香港版是一款數位桌遊，玩家在香港地鐵網絡中穿梭，購買物業，鬥快到達目的地。遊戲包含季節性活動、支援最多4人多人模式，以及自訂遊玩時間長度，是一款結合策略，學習，與樂趣的獨特遊戲！遊戲只由一名香港人嘔心瀝血開發，目的在於讓香港人找回香港的感覺，並且可以讓新一代通過遊戲學習香港地理和各區特色。</p>
             <div class="video-container">
-                <iframe width="770" height="433" src="https://www.youtube.com/embed/el2SWws_yZc?autoplay=1&start=403&mute=1&loop=1&playlist=el2SWws_yZc" title="Lorye Go! Hong Kong Edition Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="770" height="433" src="https://www.youtube.com/embed/el2SWws_yZc?autoplay=1&start=403&mute=1&loop=1&playlist=el2SWws_yZc" title="小熊諾樂GO！香港版遊戲演示" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         <section id="news" class="content-section">
-            <h2>News</h2>
+            <h2>新聞</h2>
             <div class="news-carousel-container">
                 <button class="carousel-btn left" onclick="scrollCarousel('left')">❮</button>
                 <div class="news-carousel" id="newsCarousel">
+
                     <div class="news-card">
                         <div class="news-image">
-                            <img src="pics/news/must_buy_property.png" alt="A Placeholder">
-                        </div>
-                        <div class="news-content">
-                            <h3>Debugging the macOS Freeze in Lorye Go!</h3>
-                            <p class="news-date">3/27/2025</p>
-                            <p>debugging a macOS freeze in 'Lorye Go! 香港版,' reinforcing my belief of AI still needs some time to replace human coders.</p>
-                            <a href="news_debugging_the_macOS_Freeze.html" class="news-btn">READ MORE</a>
-                        </div>
-                    </div>
-                    <div class="news-card">
-                        <div class="news-image">
-                            <img src="pics/news/news-vibe-coding.jpg" alt="Vibe Coding Lorye Go!">
-                        </div>
-                        <div class="news-content">
-                            <h3>Vibe Coding a Hong Kong Dream</h3>
-                            <p class="news-date">3/26/2025</p>
-                            <p>A few words from the game developer — a journey with AI and enthusiasm from dream to reality.</p>
-                            <a href="news_vibe_coding.html" class="news-btn">READ MORE</a>
-                        </div>
-                    </div>
-                    <div class="news-card">
-                        <div class="news-image">
-                            <img src="pics/news/news-vibe-coding-probability.jpg" alt="Vibe Coding Journey">
-                        </div>
-                        <div class="news-content">
-                            <h3>Vibe Coding Journey</h3>
-                            <p class="news-date">3/22/2025</p>
-                            <p>Solving randomization woes in Lorye Go! with AI and human flair.</p>
-                            <a href="news_vibe_coding_probability.html" class="news-btn">READ MORE</a>
-                        </div>
-                    </div>
-                    <div class="news-card">
-                        <div class="news-image">
-                            <img src="pics/news/news-vibe-coding.jpg" alt="A Placeholder">
+                            <img src="pics/news/news-vibe-coding.jpg" alt="占位圖">
                         </div>
                         <div class="news-content">
                             <h3>Vibe Coding 一個香港夢</h3>
-                            <p class="news-date">3/27/2025</p>
+                            <p class="news-date">2025年3月27日</p>
                             <p>與 AI 共建小熊諾樂GO！</p>
-                            <a href="news_vibe_coding.cht.html" class="news-btn">READ MORE</a>
+                            <a href="news_vibe_coding.cht.html" class="news-btn">閱讀更多</a>
                         </div>
                     </div>
                     <div class="news-card">
                         <div class="news-image">
-                            <img src="pics/news/news-vibe-coding-probability.jpg" alt="A Placeholder">
+                            <img src="pics/news/news-vibe-coding-probability.jpg" alt="占位圖">
                         </div>
                         <div class="news-content">
                             <h3>Vibe Coding 之旅</h3>
-                            <p class="news-date">3/27/2025</p>
+                            <p class="news-date">2025年3月27日</p>
                             <p>解決《小熊諾樂GO！香港版》的隨機化問題⋯⋯</p>
-                            <a href="news_vibe_coding_probability.cht.html" class="news-btn">READ MORE</a>
+                            <a href="news_vibe_coding_probability.cht.html" class="news-btn">閱讀更多</a>
                         </div>
                     </div>
                     <div class="news-card">
                         <div class="news-image">
-                            <img src="pics/news/how_to_win.png" alt="A Placeholder">
+                            <img src="pics/news/how_to_win.png" alt="占位圖">喂
                         </div>
                         <div class="news-content">
                             <h3>如何在小熊諾樂GO！香港版中獲勝</h3>
-                            <p class="news-date">3/27/2025</p>
+                            <p class="news-date">2025年3月27日</p>
                             <p>贏得勝利不只是靠運氣! 要有策略，現在就讓我告訴你秘訣吧！</p>
-                            <a href="how_to_win.cht.html" class="news-btn">READ MORE</a>
+                            <a href="how_to_win.cht.html" class="news-btn">閱讀更多</a>
                         </div>
                     </div>
                 </div>
@@ -209,39 +178,38 @@
                 <span class="dot active" data-index="0"></span>
                 <span class="dot" data-index="1"></span>
                 <span class="dot" data-index="2"></span>
-                <span class="dot" data-index="3"></span>
-                <span class="dot" data-index="4"></span>
-                <span class="dot" data-index="5"></span>
+
+
             </div>
         </section>
         <section id="screenshots" class="content-section">
-            <h2>Screenshots</h2>
+            <h2>遊戲截圖</h2>
             <div class="screenshot-carousel-container">
                 <button class="carousel-btn left" onclick="scrollScreenshotCarousel('left')">❮</button>
                 <div class="screenshot-carousel" id="screenshotCarousel">
                     <div class="screenshot-item">
-                        <img src="pics/screenshots/screenshot-1.jpg" alt="Game Cover">
-                        <p>King-Rexy's invasion! Can you survive his stomps?</p>
+                        <img src="pics/screenshots/screenshot-1.jpg" alt="遊戲封面">
+                        <p>King-Rexy的入侵！你能躲過他的踐踏嗎？</p>
                     </div>
                     <div class="screenshot-item">
-                        <img src="pics/screenshots/screenshot-2.jpg" alt="Gameplay Screenshot">
-                        <p>Who is the alien kidnapping...? You?</p>
+                        <img src="pics/screenshots/screenshot-2.jpg" alt="遊戲截圖">
+                        <p>外星人在綁架誰……是你嗎？</p>
                     </div>
                     <div class="screenshot-item">
-                        <img src="pics/screenshots/screenshot-3.jpg" alt="Station Purchase">
-                        <p>Lundam shows up in Hong Kong TST! Go get a selfie!</p>
+                        <img src="pics/screenshots/screenshot-3.jpg" alt="車站購買">
+                        <p>Lundam在香港尖沙咀出現！快去自拍一下吧！</p>
                     </div>
                     <div class="screenshot-item">
-                        <img src="pics/screenshots/screenshot-4.jpg" alt="Event Screen">
-                        <p>The legendary Blue Hut Restaurant opens again secretly in Stanley!</p>
+                        <img src="pics/screenshots/screenshot-4.jpg" alt="事件畫面">
+                        <p>傳奇藍屋餐廳在赤柱秘密重開！</p>
                     </div>
                     <div class="screenshot-item">
-                        <img src="pics/screenshots/screenshot-5.jpg" alt="Multiplayer Mode">
-                        <p>Multiplayer action with friends! Player 1 is blue, player 2 is yellow, ... player 4 is green!</p>
+                        <img src="pics/screenshots/screenshot-5.jpg" alt="多人模式">
+                        <p>與朋友的多人對戰！玩家1是藍色，玩家2是黃色……玩家4是綠色！</p>
                     </div>
                     <div class="screenshot-item">
-                        <img src="pics/screenshots/screenshot-6.jpg" alt="Victory Screen">
-                        <p>Other seasonal events! Are you going to benefit or worsen off?</p>
+                        <img src="pics/screenshots/screenshot-6.jpg" alt="勝利畫面">
+                        <p>其他季節性活動！你會受益還是變糟？</p>
                     </div>
                 </div>
                 <button class="carousel-btn right" onclick="scrollScreenshotCarousel('right')">❯</button>
@@ -256,32 +224,32 @@
             </div>
         </section>
         <section id="how-to-play" class="content-section">
-            <h2>How to Play</h2>
+            <h2>遊戲玩法</h2>
             <ul>
-                <li><strong>Roll Dice:</strong> Click "擲骰" (Roll Dice) on the HUD to move.</li>
-                <li><strong>Navigate Map:</strong> Use "瀏覽地圖" (Browse Map) to explore or click stations to move.</li>
-                <li><strong>Buy Properties:</strong> Visit city stations to purchase assets.</li>
-                <li><strong>Reach Destinations:</strong> Arrive at the destination to earn HK$1000!</li>
-                <li><strong>Events:</strong> Encounter seasonal or station-specific events that may teleport you or affect your cash!</li>
+                <li><strong>擲骰子：</strong> 點擊HUD上的「擲骰」來移動。</li>
+                <li><strong>瀏覽地圖：</strong> 使用「瀏覽地圖」探索或點擊車站移動。</li>
+                <li><strong>購買物業：</strong> 到訪車站以購買資產。</li>
+                <li><strong>到達目的地：</strong> 抵達目的地可賺取遊戲內港幣1000元！</li>
+                <li><strong>突發事件：</strong> 遇到季節性或車站特定事件，可能會傳送你或影響你的資產！</li>
             </ul>
         </section>
         <section id="download" class="content-section">
-            <h2>Get the Game</h2>
-            <p>Download the latest version of Lorye Go! Hong Kong Edition for Windows or Mac and start playing today!</p>
+            <h2>立即下載遊戲</h2>
+            <p>下載小熊諾樂GO！香港版的最新版本，適用於Windows或Mac，立即開始遊戲！</p>
             <div class="download-buttons">
                 <a href="https://github.com/entzyeung/LoryeGo/raw/main/win/Lorye_Go_v994.exe" class="download-btn windows">
-                    <img src="pics/win.png" alt="Windows Icon" class="platform-icon"> Download for Windows
+                    <img src="pics/win.png" alt="Windows圖標" class="platform-icon"> 下載 Windows 版
                 </a>
                 <a href="https://github.com/entzyeung/LoryeGo/raw/main/mac/Lorye_Go_v994.zip" class="download-btn mac">
-                    <img src="pics/mac.png" alt="Mac Icon" class="platform-icon"> Download for Mac
+                    <img src="pics/mac.png" alt="Mac圖標" class="platform-icon"> 下載 Mac 版
                 </a>
             </div>
         </section>
     </main>
     <footer class="content-section">
-        <p>Developed by Entz Yeung | <a href="https://github.com/entzyeung">GitHub Profile</a> | <a href="/cdn-cgi/l/email-protection#395c170d03001c0c171e391e14181015571a1614">Contact</a></p>
-        <p><a href="privacy.html">Privacy Policy</a></p>
-        <p>© 2025 Lorye Go! Hong Kong Edition. All rights reserved.</p>
+        <p>由 Entz Yeung 開發 | <a href="https://github.com/entzyeung">GitHub 個人檔案</a> | <a href="/cdn-cgi/l/email-protection#395c170d03001c0c171e391e14181015571a1614">聯繫</a></p>
+        <p><a href="privacy.html">隱私政策</a></p>
+        <p>© 2025 小熊諾樂GO！香港版。版權所有。</p>
     </footer>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="script.js"></script>
