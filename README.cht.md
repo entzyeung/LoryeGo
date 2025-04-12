@@ -6,8 +6,8 @@
 
 呢個係我為趣而做嘅副業項目，仍然喺開發中。呢個版本只係一個MVP（最小可行產品），用來示範用途。
 
-- **網站**: [LoryeGo 主頁](https://entzyeung.github.io/LoryeGo)
-- **GitHub 倉庫**: [https://github.com/entzyeung/LoryeGo](https://github.com/entzyeung/LoryeGo)
+- **網站**: [LoryeGo 主頁](https://entzyeung.github.io/LoryeGo/index.cht.html)
+- **GitHub 檔案庫**: [https://github.com/entzyeung/LoryeGo](https://github.com/entzyeung/LoryeGo)
 - **開發者**: Entz Yeung
 - **許可證**: [MIT 許可證](#license)
 
