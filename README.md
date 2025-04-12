@@ -36,21 +36,33 @@ The game has been packaged into a standalone Windows executable (`.exe`) using P
 ## Installation
 
 ### Prerequisites
-- **Operating System**: Windows (tested on Windows 11)
-- **Hardware**: Any modern PC (remarks: no graphic cards needed. Light weighted execute file.)
+- **Operating System**: Windows (tested on Windows 11) or macOS
+- **Hardware**: Any modern PC or Mac (remarks: no graphic cards needed. Lightweight executable file.)
 
 ### Downloading the Game
 1. Visit the [project website](https://entzyeung.github.io/LoryeGo/)
-2. Click the "Download .exe" button to get the latest version of the game (`Lorye_Go_v092.exe`).
-3. The file is hosted on GitHub Releases.
+2. Click the "Download .exe" button for Windows or "Download for Mac" for macOS to get the latest version of the game (`Lorye_Go_v994.exe` for Windows, `Lorye_Go_v994.zip` for macOS).
+3. The files are hosted on GitHub Releases.
 
-### Running the Game
-1. After downloading, locate the `.exe` file (e.g., `Lorye_Go_v092.exe`).
+### Running the Game on Windows
+1. After downloading, locate the `.exe` file (e.g., `Lorye_Go_v994.exe`).
 2. Double-click the file to launch the game.
 3. Follow the on-screen instructions to set up the number of players, player names, and game duration.
 
 **Note**: Since this is an `.exe` file, your antivirus might flag it as untrusted. This is common for self-signed executables. Our file is 100% safe.
 
+### Running the Game on macOS
+1. After downloading, locate the `.zip` file (e.g., `Lorye_Go_v994.zip`).
+2. Double-click the `.zip` file to extract the `Lorye_Go_v994.app` application.
+3. Move the `Lorye_Go_v994.app` to your Applications folder (optional but recommended).
+4. Double-click the `Lorye_Go_v994.app` to launch the game. You may see a security warning like the one below because I am not a registered Apple developer:
+
+   ![macOS Security Warning](macos_security_warning.png)
+
+   **Security Note**: This warning is normal for apps not signed by a registered Apple developer. I assure you that this app is 100% safe and virus-free. I stand by the integrity of this project.
+
+5. To bypass the warning, go to `System Settings > Privacy & Security`. You’ll see a message saying “Lorye_Go_v994.app” was blocked. Click **Open Anyway** to allow the app to run.
+6. Follow the on-screen instructions to set up the number of players, player names, and game duration.
 
 ---
 
@@ -96,7 +108,6 @@ The game has been packaged into a standalone Windows executable (`.exe`) using P
 ![Gameplay Screenshot](win/screenshots/window_screenshot_20250315_071518.jpg)
 
 ---
-
 
 ### Issues
 This is my side project for fun only, and still under development. This version is just a MVP for demo purpose only. 
