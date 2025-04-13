@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://entzyeung.github.io/LoryeGo/sitemap.xml
